@@ -6,14 +6,14 @@ describe('Button', () => {
   })
 
   it('shows on the docz page', () => {
-    cy.get('h2#basic-usage + div > button').should('be.visible')
+    cy.get('h2#basic-usage + button').should('be.visible').contains('Click me')
   })
 
   it('shows alert on click', () => {
     const stub = cy.stub()
     cy.on('window:alert', stub)
 
-    cy.get('h2#with-onclick-handler + div > button')
+    cy.get('h2#with-onclick-handler + button')
     .scrollIntoView()
     .click()
     .then(() => {

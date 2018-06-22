@@ -1,2 +1,4 @@
 node_modules/
 .docz/
+cypress/screenshots
+cypress/videos

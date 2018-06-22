@@ -1,20 +1,41 @@
 {
   "name": "cy-docz",
   "version": "1.0.0",
-  "description": "",
+  "description": "Live, tested documentation using MDX docz and Cypress.io",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "start-test dev http-get://localhost:3000 cy:run",
     "dev": "docz dev",
     "build": "docz build",
     "cy:open": "cypress open",
     "cy:run": "cypress run"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "cypress",
+    "docz",
+    "mdx",
+    "demo"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "cypress": "3.0.1",
-    "docz": "0.2.6"
+    "docz": "0.2.6",
+    "start-server-and-test": "1.4.1"
+  },
+  "private": true,
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bahmutov/cy-docz.git"
+  },
+  "homepage": "https://github.com/bahmutov/cy-docz#readme",
+  "bugs": "https://github.com/bahmutov/cy-docz/issues",
+  "dependencies": {
+    "prop-types": "15.6.2",
+    "react": "16.4.1",
+    "react-emotion": "9.2.4"
   }
 }
