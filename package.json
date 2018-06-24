@@ -8,7 +8,9 @@
     "dev": "docz dev",
     "build": "docz build",
     "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d .docz/dist"
   },
   "keywords": [
     "cypress",
@@ -21,6 +23,7 @@
   "devDependencies": {
     "cypress": "3.0.1",
     "docz": "0.2.6",
+    "gh-pages": "1.2.0",
     "start-server-and-test": "1.4.1"
   },
   "private": true,
