@@ -1,1 +1,5 @@
-{}
+{
+  "integrationFolder": "components",
+  "ignoreTestFiles": "*.*x",
+  "viewportWidth": 1400
+}

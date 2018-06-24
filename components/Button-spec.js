@@ -14,7 +14,6 @@ describe('Button', () => {
     cy.on('window:alert', stub)
 
     cy.get('h2#with-onclick-handler + button')
-    .scrollIntoView()
     .click()
     .then(() => {
       expect(stub).to.have.been.calledOnce
