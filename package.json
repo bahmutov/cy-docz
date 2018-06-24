@@ -22,8 +22,9 @@
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "7.0.0-beta.51",
     "cypress": "3.0.1",
-    "docz": "0.2.6",
+    "docz": "0.2.11",
     "gh-pages": "1.2.0",
     "start-server-and-test": "1.4.1"
   },
@@ -37,9 +38,5 @@
   },
   "homepage": "https://github.com/bahmutov/cy-docz#readme",
   "bugs": "https://github.com/bahmutov/cy-docz/issues",
-  "dependencies": {
-    "prop-types": "15.6.2",
-    "react": "16.4.1",
-    "react-emotion": "9.2.4"
-  }
+  "dependencies": {}
 }
