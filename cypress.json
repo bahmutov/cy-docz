@@ -1,5 +1,6 @@
 {
   "integrationFolder": "components",
   "ignoreTestFiles": "*.*x",
-  "viewportWidth": 1400
+  "viewportWidth": 1400,
+  "baseUrl": "http://localhost:3000"
 }

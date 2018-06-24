@@ -2,7 +2,7 @@
 //@ts-check
 describe('Button', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000/components-button')
+    cy.visit('/components-button')
   })
 
   it('shows on the docz page', () => {

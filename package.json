@@ -6,7 +6,7 @@
   "scripts": {
     "test": "start-test dev http-get://localhost:3000 cy:run",
     "dev": "docz dev",
-    "build": "docz build",
+    "build": "docz build --base /cy-docz/",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "predeploy": "npm run build",
